@@ -6,9 +6,13 @@ import store from './store'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 
+import marvin_mahaitao_test_test from 'marvin_mahaitao_test_test'
+
+
 Vue.config.productionTip = false
 //
 Vue.use(ElementUI);
+Vue.use(marvin_mahaitao_test_test);
 new Vue({
   router,
   store,
