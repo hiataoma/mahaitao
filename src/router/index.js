@@ -16,6 +16,16 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../components/descriptions')
   },
   {
+    path: '/tabel',
+    name: 'tabel',
+    component: () => import(/* webpackChunkName: "about" */ '../components/tabel')
+  },
+  {
+    path: '/tree',
+    name: 'tree',
+    component: () => import(/* webpackChunkName: "about" */ '../components/tree')
+  },
+  {
     path: '/componnets',
     name: 'componnets',
     // route level code-splitting
