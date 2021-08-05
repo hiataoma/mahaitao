@@ -1,6 +1,8 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+      <sumFunction/>
+      <sum2/>
+      <h1>{{ msg }}</h1>
   </div>
 </template>
 
