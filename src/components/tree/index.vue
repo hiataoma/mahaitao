@@ -7,7 +7,7 @@
             ref="tree"
             highlight-current
             @node-click="clickNode"
-            @check="checkChange"
+            @check-change="checkChange"
             :props="defaultProps">
             </el-tree>
         <div class="buttons">
