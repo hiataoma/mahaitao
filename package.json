@@ -7,6 +7,13 @@
     "dev": "vue-cli-service serve --mode development",
     "build": "vue-cli-service build"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "node script/verify-commit.js",
+      "pre-push": "npm test"
+    }
+  },
   "dependencies": {
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
@@ -26,6 +33,7 @@
     "@vue/cli-plugin-router": "~4.5.0",
     "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
+    "husky": "^7.0.1",
     "vue-template-compiler": "^2.6.11"
   },
   "browserslist": [
