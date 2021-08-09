@@ -14,6 +14,12 @@
       "pre-push": "npm test"
     }
   },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": "eslint",
+    "test/**/*.{js,jsx,ts,tsx}": "eslint",
+    "*.css": "stylelint",
+    "*.html": "htmlhint"
+  },
   "dependencies": {
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
@@ -34,7 +40,7 @@
     "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "chalk": "^4.1.0",
-    "husky": "^7.0.1",
+    "husky": "^4.3.0",
     "lint-staged": "^10.5.4",
     "vue-template-compiler": "^2.6.11"
   },
