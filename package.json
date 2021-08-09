@@ -12,7 +12,10 @@
     "core-js": "^3.6.5",
     "element-ui": "^2.15.5",
     "marvin_mahaitao_test_test": "^1.0.8",
+    "node-sass": "^6.0.1",
     "register-service-worker": "^1.7.1",
+    "sass": "^1.37.5",
+    "sass-loader": "^12.1.0",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
     "vuex": "^3.4.0"
