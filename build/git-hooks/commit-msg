@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+# Validate commit log
+commit_regex='^Merge.+|(feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert|types)(\(.+\))?: .{1,50}'
+
+if ! grep -iqE "$commit_regex" "$1"; then
+    echo " --------------------------------------------------  "
+    echo "|  Error: invalid commit message format.            | "
+    echo "|                                                   | "
+    echo "|  Format: git commit -m '<keyword>: <message>'     | "
+    echo "|                                                   | "
+    echo "|  <keyword> is one of:                             | "
+    echo "|       feat, fix, docs, style, refactor, perf,     | "
+    echo "|       test, build, ci, chore, revert, types       | "
+    echo "|                                                   | "
+    echo "|  <message> is no more than 50 words.              | "
+    echo "|                                                   | "
+    echo " ---------------------------------------------------  "
+    exit 1
+fi
