@@ -7,11 +7,12 @@ import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import Axios from 'axios'
 
-import marvin_mahaitao_test_test from 'marvin_mahaitao_test_test'
+import xEleTable from 'photonpay'
 
 Vue.config.productionTip = false
 Vue.use(ElementUI);
-Vue.use(marvin_mahaitao_test_test.sum2).use(marvin_mahaitao_test_test.sumFunction);
+
+Vue.use(xEleTable)
 new Vue({
   router,
   store,
